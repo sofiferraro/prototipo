@@ -139,8 +139,13 @@
   <div id="img1">
     <img class="img" src="inicio.jpeg" alt="">
       <a class="boton1" href=""><img class="boton1" src="inicioboton.png" alt=""></a>
-  </div>   
+  </div> 
+  
+  
+  <button id="volverGeneral" href="boton1"><img src="volver.png" alt=""></button>
 </div>
+
+
 <button id="volverIdiomas" class="volver" href="">VOLVER</button>
 
 <button id="volverObras" class="volver" href="">VOLVER</button>
@@ -207,12 +212,11 @@
             $('#obra2').css({"margin-left":"15em","margin-right":"-23em"});
             $('#volverIdiomas').fadeOut("slow");
             $('#volverObras').fadeIn("slow");
-            $('#obra21').click(function(){
+            $('#obra2').click(function(){
               $('#img').fadeIn("9000");
               $('#obra').fadeOut("slow");
               });
             });
-
         $('#obra3').click(function(){
             $('#obra1').fadeOut("slow");
             $('#obra2').fadeOut("slow");
@@ -240,9 +244,7 @@
               $('#obra4').fadeOut("slow");
               });
             });   
-               
-         
-                   
+                              
          $('#volverObras').click(function(){
               $('#obra1').fadeIn("slow");
               $('#obra2').fadeIn("slow");
@@ -262,7 +264,21 @@
 
             });
        
-
+         $('#volverGeneral').click(function(){
+           $("#img").fadeOut("slow");
+           $('#obra1').fadeIn("slow");
+           $('#obra2').fadeIn("slow");
+            $('#obra3').fadeIn("slow");
+            $('#obra4').fadeIn("slow");
+            $('#rectangulo1').animate({width:"8.5em", height:"12em"});
+              $('#obra1').css({"margin-left":"5em","margin-right":"10em"});
+              $('#rectangulo2').animate({width:"8.5em", height:"12em"});
+              $('#obra2').css({"margin-left":"8em","margin-right":"-2em"});
+              $('#rectangulo3').animate({width:"8.5em", height:"12em"});
+              $('#obra3').css({"margin-left":"-.8em","margin-right":"2em"});
+              $('#rectangulo4').animate({width:"8.5em", height:"12em"});
+              $('#obra4').css({"margin-left":"11em","margin-right":"10em"});
+         })   
 
   </script>
   <!------------------FIN MENU---------------------->
