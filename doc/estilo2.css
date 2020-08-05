@@ -1,0 +1,354 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+/*------------------- BOTON INICIO LIVIA ----------------*/
+.firma{width: 6em;}
+a{
+transition: filter .7s;
+transition-property: filter;
+transition-duration: 0.7s;
+transition-timing-function: ease;
+transition-delay: 0s;}
+
+a:hover{filter: brightness(70%)}
+
+
+/*
+.firmaboton{
+      filter: opacity(100%);
+        transition: all .7s;}      
+.firmaboton:hover{filter: opacity(30%);
+              transition: all .7s;}   
+*/
+         
+/*---------------MENU OCULTO INDEX---------------
+.menu-oculto main{position: absolute;
+            filter:opacity(0%);
+             transform: translateY(-190px);
+             transition: all 1.8s ease;
+             right: 46.2%;
+            }
+
+.menu-oculto a:focus + main{filter: opacity(100%);
+                            transform: translateY(-100px);
+                            }             
+a:focus{opacity: 0%;}
+*/
+ /*---------------------MENU DROPDOWN COMIENZO--------------------------*/
+ .firma-livia-nav{width:3em}
+/*--------------MENU OCULTO JQUERY------*/
+.menu-oculto {position: absolute;
+    /*filter:opacity(20%);*/
+    display: none;
+    
+    }
+.vacio-abajo{position: absolute;
+        top:85%;
+        width: 80%;
+        height: 40vh;}
+.vacio-arriba{position: absolute;
+            bottom:85%;
+            width: 90%;
+            height: 40vh;}
+/*------------FIN M.O. JQ------------*/
+main div.dropdown-toggle,
+main div.dropdown-toggle a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  font-weight: 400;
+ text-transform: lowercase;
+ text-align: center;
+  margin: .4rem 0 0 0;
+  font-size: 1rem;
+  letter-spacing: 0.22rem;
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: filter 1s;
+}
+main div.dropdown-toggle a:hover{
+	filter: brightness(70%);
+}
+main div.dropdown-toggle.link {text-decoration: none;}
+
+main div.dropdown-info {
+  display: none;
+}
+main div.dropdown-info a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #e4e4e4;
+  position: relative;
+}
+main div.dropdown-info a:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(155, 155, 155);
+  content: '';
+  display: block;
+  height: 0.05rem;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+main div.dropdown-info a:hover {
+  cursor: pointer;
+}
+ul .subsubmenu a:hover:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(180, 13, 13);
+  content: '';
+  display: block;
+  height: 0.08rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+main div.dropdown-info ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #3D3D3D;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.subrayado-rojo a:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(155, 155, 155);
+	content: '';
+	display: block;
+	height: 0.05rem;
+	left: 0;
+	position: absolute;
+	width: 0;
+  }
+.subrayado-rojo a:hover {
+	cursor: pointer;
+  }
+  .subrayado-rojo a:hover:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgba(20, 201, 192, 0.562);
+	content: '';
+	display: block;
+	height: 0.08rem;
+	left: 0;
+	position: absolute;
+	width: 100%;
+  }
+
+.negrita {font-weight: 700;}
+
+ul{margin: 0;
+	padding-inline-start:0;}
+.menu-ul{text-align: center;
+		 padding-right: .5em;}	
+
+
+main div.dropdown-info ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  
+  text-decoration: none;
+  color: rgba(231, 231, 231, 0.658);
+  font-size: .9rem;
+  margin-top: 1em ;
+  text-align: center;
+}
+main div.dropdown-info ul li a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+main div.dropdown-info ul li ul {
+  margin-left: 0rem;
+}
+main div.dropdown-info ul li ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.0rem;
+  color: #3D3D3D;
+  font-size: 1.0rem;
+}
+.dropdown-toggle::after{border: none;}
+main.menu-portada {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}              
+
+
+a.directo{      font-family: 'Montserrat', 'Century gothic', sans-serif;
+	font-weight: 300;
+	font-size: 2.3rem;
+	font-weight: 400;
+   text-transform: lowercase;
+   text-align: center;
+	margin: .4rem 0 0 0;
+	font-size: 1rem;
+	letter-spacing: 0.22rem;
+	color: #b3b3b3;
+	text-decoration: none;
+	transition: filter 1s;
+	padding-right: .4em;}
+
+section.boton-directo{
+	margin: .4rem 0 0 0;
+}	
+
+
+/*--------------------------------*/
+
+main div.dropdown-toggle2,
+main div.dropdown-toggle2 a {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: filter 1s;
+}
+main div.dropdown-toggle a:hover{
+	filter: brightness(70%);
+}
+main div.dropdown-toggle.link {text-decoration: none;}
+
+main div.menu-nav-info {
+  display: none;
+}
+main div.menu-nav-info a {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #b30000;
+  position: relative;
+}
+main div.menu-nav-info a:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(155, 155, 155);
+  content: '';
+  display: block;
+  height: 0.05rem;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+main div.menu-nav-info a:hover {
+  cursor: pointer;
+}
+main div.menu-nav-info a:hover:after {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background: rgb(255, 255, 255);
+  content: '';
+  display: block;
+  height: 0.08rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+main div.menu-nav-info ul li {
+  font-family: 'Montserrat', 'Century gothic', sans-serif;
+  font-weight: 300;
+  font-size: 2.3rem;
+  color: #3D3D3D;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.subrayado-rojo a:after {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+	background: rgb(155, 155, 155);
+	content: '';
+	display: block;
+	height: 0.05rem;
+	left: 0;
+	position: absolute;
+	width: 0;
+  }
+.subrayado-rojo a:hover {
+	cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+.footer{position: absolute;
+        top:95%
+    
+      }
+
+
+
+
+
+
+
+  @media (min-width: 700px) and (orientation: landscape){
+
+
+                                                                    .hover-transition{transition: filter .7s;
+                                                                        cursor: pointer;}
+                                                                    .hover-transition:hover{filter: brightness(50%);
+                                                                    } 
+                                                                    .hover-transition-invert {filter: brightness(80%);
+                                                                            transition: filter .7s;
+                                                                            cursor: pointer;}
+                                                                    .hover-transition-invert:hover{filter: brightness(100%);
+                                                                    } 
+                                                                    .hover-transition-byn{filter: grayscale(100%);
+                                                                            transition: filter .7s;
+                                                                            cursor: pointer;}
+                                                                    .hover-transition-byn:hover{filter: grayscale(0%);
+                                                                    } 	
+                                                                    main div.menu-tipo, main  {font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+                                                                        font-size: 1rem;
+                                                                        font-weight: 400;
+                                                                        line-height: 1.5;
+                                                                        padding-top: .25em;
+                                                                        }
+                                                                    .vacio-abajo{position: absolute;
+                                                                            top:70%;
+                                                                            width: 80%;
+                                                                            height: 40vh;}
+                                                                    .vacio-arriba{position: absolute;
+                                                                                bottom:70%;
+                                                                                width: 90%;
+                                                                                height: 40vh;}   
+                                                        }           
