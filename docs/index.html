@@ -140,6 +140,11 @@
                 top:10%;
                 left:1%;
                 }
+        #estrellas2{z-index: 150;
+               position: absolute;
+                top:10%;
+                left:1%;
+                }     
           .preguntas{position: absolute;
                       z-index: 123;
                       top:30%;
@@ -153,7 +158,11 @@
                       left:35%;
                       width: 3em;
                     }                      
-                          
+         #error{position: absolute;
+                      z-index: 124;
+                      top:15%;
+                      left:35%;
+                      width: 3em; }                 
 
  </style>
   </head>
@@ -208,7 +217,7 @@
       <img class="img4" src="imagenes/8.jpg" alt="">
   </div> 
 
-
+  <img id="estrellas2" src="imagenes/estrellas2.png" alt="">
   <img id="estrellas" src="imagenes/estrellas.png" alt="">
   <button id="volverGeneral" ><img class="boton2" src="volver.png" alt=""></button>
 </div>
@@ -234,6 +243,7 @@
       $('#img3').hide();
       $('#img4').hide();
       $('#estrellas').hide();
+      $('#estrellas2').hide();
       $('#correcto').hide();
       $('#error').hide();
 
@@ -379,6 +389,16 @@
          setTimeout(function() {
                $("#img4").fadeIn("fast");
          },2500);
+         }); 
+
+         $('#cubismo').click(function(){
+           $("#error").fadeIn("slow");
+           setTimeout(function() {
+               $("#estrellas").fadeOut("slow");
+         },500);
+         setTimeout(function() {
+               $("#estrellas2").fadeIn("slow");
+         },500);
          }); 
 
   </script>
