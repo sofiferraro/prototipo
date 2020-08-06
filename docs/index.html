@@ -80,7 +80,8 @@
       .contenedorObrasIngles{position: absolute;
                              bottom: 60%;  } 
        img{z-index: 100;}
-       .img{z-index: 100;}     
+       .img{z-index: 100;} 
+       .img2{z-index: 120;}    
        #obra1{position: absolute;
               bottom: 40%;
               right: 15%;
@@ -108,7 +109,8 @@
        .boton1{z-index: 150;
                position: absolute;
                 top:30%;
-                left:45% } 
+                left:45%;
+                cursor: pointer; } 
         .boton2 {z-index: 150;
                position: absolute;
                 top:-7em;
@@ -145,9 +147,12 @@
 <div id="img">
   <div id="img1">
     <img class="img" src="inicio.jpeg" alt="">
-      <a class="boton1" href=""><img class="boton1" src="inicioboton.png" alt=""></a>
+      <button class="boton1" id="boton1"><img class="boton1" src="inicioboton.png" alt=""> </button>
+   </div> 
+   <div id="img2">
+    <img class="img2" src="imagenes/7.jpg" alt="">
   </div> 
-  
+
   
   <button id="volverGeneral" ><img class="boton2" src="volver.png" alt=""></button>
 </div>
@@ -169,6 +174,7 @@
       $('#volverIdiomas').hide();
       $('#volverObras').hide();
       $('#img').hide();
+      $('#img2').hide();
 
        $(document).ready(function(){
          $('#español').click(function(){
@@ -208,6 +214,7 @@
             $('#volverObras').fadeIn("slow");
             $('#obra1').click(function(){
               $('#img').fadeIn("9000");
+              
               $('#obra1').fadeOut("slow");
               });
             });
@@ -285,7 +292,12 @@
               $('#obra3').css({"margin-left":"-.8em","margin-right":"2em"});
               $('#rectangulo4').animate({width:"8.5em", height:"12em"});
               $('#obra4').css({"margin-left":"11em","margin-right":"10em"});
-         })   
+         });
+
+         $('#boton1').click(function(){
+          $("#img2").fadeIn("slow");
+          $("#img1").fadeOut("slow");
+         });   
 
   </script>
   <!------------------FIN MENU---------------------->
