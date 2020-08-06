@@ -62,7 +62,7 @@
       border:none;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
    button:hover{filter: brightness(100%);
-                } 
+                cursor: pointer;} 
    .bold{font-weight: 700;}
    .dosObras{display: flex;
              justify-content: center;
@@ -92,7 +92,8 @@
        img{z-index: 100;}
        .img{z-index: 100;} 
        .img2{z-index: 120;}
-       .img3{z-index: 122;}       
+       .img3{z-index: 122;}
+       .img4{z-index: 123;}         
        #obra1{position: absolute;
               bottom: 40%;
               right: 15%;
@@ -140,6 +141,11 @@
                 top:10%;
                 left:1%;
                 }
+        #estrellas1{z-index: 150;
+               position: absolute;
+                top:10%;
+                left:1%;
+                }       
         #estrellas2{z-index: 150;
                position: absolute;
                 top:10%;
@@ -162,7 +168,13 @@
                       z-index: 124;
                       top:15%;
                       left:35%;
-                      width: 3em; }                 
+                      width: 3em; } 
+          .mano{position: absolute;
+                      z-index: 124;
+                      top:50%;
+                      left:35%;
+                     
+                    }                             
 
  </style>
   </head>
@@ -194,7 +206,7 @@
     <img class="img" src="imagenes/wiframe.jpg" alt="">
       <button class="boton1" id="boton1"><img class="boton1" src="inicioboton.png" alt=""> </button>
    </div> 
-   <div id="img2">
+   <div id="img2" class="img2">
     <button class="siguiente" id="siguiente"><img src="imagenes/siguiente.png" alt=""></button>
       <img class="img2" src="imagenes/7.jpg" alt="">
   </div> 
@@ -205,7 +217,7 @@
         <h4 class="bold">¿A qué corriente artística pertenece el autor?</h5>
           <button id="cubismo"><h5>A. Cubismo</h5></button>
           <button id="expresionismo"><h5>B. Expresionismo</h5></button>
-          <button id="Impresionismo"><h5>C. Impresionismo</h5></button>
+          <button id="impresionismo"><h5>C. Impresionismo</h5></button>
     
 
         </div>
@@ -214,10 +226,11 @@
   </div> 
   <div id="img4">
     <button class="siguiente" id="siguiente2"><img src="imagenes/siguiente.png" alt=""></button>
-      <img class="img4" src="imagenes/8.jpg" alt="">
+      <img class="img4 mano" src="imagenes/mano.png" alt="">
   </div> 
 
   <img id="estrellas2" src="imagenes/estrellas2.png" alt="">
+  <img id="estrellas1" src="imagenes/estrella1.png" alt="">
   <img id="estrellas" src="imagenes/estrellas.png" alt="">
   <button id="volverGeneral" ><img class="boton2" src="volver.png" alt=""></button>
 </div>
@@ -243,6 +256,7 @@
       $('#img3').hide();
       $('#img4').hide();
       $('#estrellas').hide();
+      $('#estrellas1').hide();
       $('#estrellas2').hide();
       $('#correcto').hide();
       $('#error').hide();
@@ -381,15 +395,6 @@
           $("#img3").fadeIn("fast");
          }); 
          });   
-         $('#expresionismo').click(function(){
-           $("#correcto").fadeIn("slow");
-           setTimeout(function() {
-               $("#img3").fadeOut("fast");
-         },2500);
-         setTimeout(function() {
-               $("#img4").fadeIn("fast");
-         },2500);
-         }); 
 
          $('#cubismo').click(function(){
            $("#error").fadeIn("slow");
@@ -399,7 +404,45 @@
          setTimeout(function() {
                $("#estrellas2").fadeIn("slow");
          },500);
+            $('#impresionismo').click(function(){
+             
+              setTimeout(function() {
+                  $("#estrellas2").fadeOut("slow");
+            },500);
+            setTimeout(function() {
+                  $("#estrellas1").fadeIn("slow");
+            },500);
+            }); 
          }); 
+
+         $('#impresionismo').click(function(){
+           $("#error").fadeIn("slow");
+           setTimeout(function() {
+               $("#estrellas").fadeOut("slow");
+         },500);
+         setTimeout(function() {
+               $("#estrellas2").fadeIn("slow");
+         },500);
+            $('#cubismo').click(function(){
+             
+              setTimeout(function() {
+                  $("#estrellas2").fadeOut("slow");
+            },500);
+            setTimeout(function() {
+                  $("#estrellas1").fadeIn("slow");
+            },500);
+            }); 
+         }); 
+
+         $('#expresionismo').click(function(){
+           $("#correcto").fadeIn("slow");
+           $("#error").fadeOut("slow");
+        
+         setTimeout(function() {
+               $("#img4").fadeIn("slow");
+         },700);
+         }); 
+
 
   </script>
   <!------------------FIN MENU---------------------->
