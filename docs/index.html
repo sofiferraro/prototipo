@@ -54,7 +54,7 @@
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
    a:hover{filter: brightness(100%);} 
    button{filter: brightness(70%);
-      transition: linear .7s;
+      transition: linear .6s;
       text-decoration: none;
       color: white;
       font-weight: 700;
@@ -160,6 +160,21 @@
                 top:84%;
                 left:1%;
                 }
+      #volverGeneral2{z-index: 250;
+               position: absolute;
+                top:76%;
+                left:1%;
+                }      
+      #volverGeneral3{z-index: 250;
+               position: absolute;
+                top:76%;
+                left:1%;
+                }    
+      #volverGeneral4{z-index: 250;
+               position: absolute;
+                top:76%;
+                left:1%;
+                }                       
        #volverIdiomas{z-index: 20;
                position: absolute;
                 top:84%;
@@ -179,7 +194,51 @@
                position: absolute;
                 top:10%;
                 left:74%;
-                }       
+                } 
+      #siguiente3{z-index: 150;
+               position: absolute;
+                top:14%;
+                left:74%;
+                filter: brightness(80%);
+                transition: .6s;
+                }  
+      #siguiente3:hover{
+                filter: brightness(100%);
+                
+                }
+      #siguiente4{z-index: 150;
+               position: absolute;
+                top:14%;
+                left:74%;
+                filter: brightness(80%);
+                transition: .6s;
+                }  
+      #siguiente4:hover{
+                filter: brightness(100%);
+                
+                }
+     #siguiente5{z-index: 150;
+               position: absolute;
+                top:14%;
+                left:74%;
+                filter: brightness(80%);
+                transition: .6s;
+                }  
+      #siguiente5:hover{
+                filter: brightness(100%);
+                
+                }
+       #piezas{z-index: 150;
+               position: absolute;
+                top:19%;
+                left:30%;
+                filter: brightness(80%);
+                transition: .6s;
+                }  
+      #piezas:hover{
+                filter: brightness(100%);
+                
+                }                                                          
        #hombreUno  {z-index: 150;
                position: absolute;
                 top:20%;
@@ -221,7 +280,19 @@
                       top:0;
                       left:0;
                      
-                    }                                      
+                    }    
+           #img5{position: absolute;
+
+                  width: 100%;
+                  height: 100vh;
+                  display: flex;
+                   align-items: center; }
+           #img7{position: absolute;
+                  width: 100%;
+                  height: 100vh;
+                  display: flex;
+                   align-items: center; }         
+          #rompecabezasVacio{width: 100%;}                                                  
      
             .img{width: 100%;
                   height: 100vh;
@@ -287,6 +358,22 @@
  <button id="volverGeneral"> <img id="volverGeneralImagen" src="volver.png" alt=""></button>
 </div>
 
+<div id="img5">
+  <img id="rompecabezasVacio" src="imagenes/9.jpg" alt="">
+  <button id="volverGeneral2"> <img id="volverGeneralImagen2" src="volver.png" alt=""></button>
+  <button class="siguiente" id="siguiente3"><img src="imagenes/siguiente.png" alt=""></button>
+</div>
+<div id="img6">
+  <img id="rompecabezasVacio" src="imagenes/10.jpg" alt="">
+  <button id="volverGeneral3"> <img id="volverGeneralImagen3" src="volver.png" alt=""></button>
+  <!--<button class="siguiente" id="siguiente4"><img src="imagenes/siguiente.png" alt=""></button>
+--> <button class="piezas" id="piezas"><img src="imagenes/piezas.png" alt=""></button> 
+</div>
+<div id="img7">
+  <img id="rompecabezasVacio" src="imagenes/11.jpg" alt="">
+  <button id="volverGeneral4"> <img id="volverGeneralImagen4" src="volver.png" alt=""></button>
+ 
+</div>
 
 <button id="volverIdiomas" class="volver" href=""><img src="volver.png" alt=""></button>
 
@@ -312,7 +399,9 @@
       $('#estrellas2').hide();
       $('#correcto').hide();
       $('#error').hide();
-
+      $('#img5').hide();
+      $('#img6').hide();
+      $('#img7').hide();
        $(document).ready(function(){
          $('#español').click(function(){
             $('.unoIdioma').fadeOut("slow");
@@ -430,7 +519,70 @@
             $('#rectangulo4').animate({width:"8.5em", height:"12em"});
             $('#obra4').css({"margin-left":"11em","margin-right":"10em"});
             $('#estrellas').fadeOut("slow");
+            $('#volverGeneral').fadeOut( "slow");
+            
+          
          });
+         $('#volverGeneral2').click(function(){
+           $("#img").fadeOut("slow");
+           $("#img5").fadeOut("slow");
+           $('#obra1').fadeIn("slow");
+           $('#obra2').fadeIn("slow");
+            $('#obra3').fadeIn("slow");
+            $('#obra4').fadeIn("slow");
+            $('#rectangulo1').animate({width:"8.5em", height:"12em"});
+            $('#obra1').css({"margin-left":"5em","margin-right":"10em"});
+            $('#rectangulo2').animate({width:"8.5em", height:"12em"});
+            $('#obra2').css({"margin-left":"8em","margin-right":"-2em"});
+            $('#rectangulo3').animate({width:"8.5em", height:"12em"});
+            $('#obra3').css({"margin-left":"-.8em","margin-right":"2em"});
+            $('#rectangulo4').animate({width:"8.5em", height:"12em"});
+            $('#obra4').css({"margin-left":"11em","margin-right":"10em"});
+            $('#estrellas').fadeOut("slow");
+            $('#volverGeneral').fadeOut( "slow");
+          
+         });
+         $('#volverGeneral3').click(function(){
+           $("#img").fadeOut("slow");
+           $("#img5").fadeOut("slow");
+           $('#obra1').fadeIn("slow");
+           $('#obra2').fadeIn("slow");
+            $('#obra3').fadeIn("slow");
+            $('#obra4').fadeIn("slow");
+            $('#rectangulo1').animate({width:"8.5em", height:"12em"});
+            $('#obra1').css({"margin-left":"5em","margin-right":"10em"});
+            $('#rectangulo2').animate({width:"8.5em", height:"12em"});
+            $('#obra2').css({"margin-left":"8em","margin-right":"-2em"});
+            $('#rectangulo3').animate({width:"8.5em", height:"12em"});
+            $('#obra3').css({"margin-left":"-.8em","margin-right":"2em"});
+            $('#rectangulo4').animate({width:"8.5em", height:"12em"});
+            $('#obra4').css({"margin-left":"11em","margin-right":"10em"});
+            $('#estrellas').fadeOut("slow");
+            $('#volverGeneral').fadeOut( "slow");
+            $('#volverGeneral2').fadeOut( "slow");
+          
+         });
+         $('#volverGeneral4').click(function(){
+           $("#img").fadeOut("slow");
+           $("#img5").fadeOut("slow");
+           $('#obra1').fadeIn("slow");
+           $('#obra2').fadeIn("slow");
+            $('#obra3').fadeIn("slow");
+            $('#obra4').fadeIn("slow");
+            $('#rectangulo1').animate({width:"8.5em", height:"12em"});
+            $('#obra1').css({"margin-left":"5em","margin-right":"10em"});
+            $('#rectangulo2').animate({width:"8.5em", height:"12em"});
+            $('#obra2').css({"margin-left":"8em","margin-right":"-2em"});
+            $('#rectangulo3').animate({width:"8.5em", height:"12em"});
+            $('#obra3').css({"margin-left":"-.8em","margin-right":"2em"});
+            $('#rectangulo4').animate({width:"8.5em", height:"12em"});
+            $('#obra4').css({"margin-left":"11em","margin-right":"10em"});
+            $('#estrellas').fadeOut("slow");
+            $('#volverGeneral').fadeOut( "slow");
+            $('#volverGeneral2').fadeOut( "slow");
+            $('#volverGeneral3').fadeOut( "slow");
+         });
+
 
          $('#boton1').click(function(){
           $("#img2").fadeIn("slow");
@@ -494,8 +646,22 @@
                $("#img4").fadeIn("slow");
          },700);
          }); 
-
-
+         $('#siguiente2').click(function(){
+          $("#img5").fadeIn("slow");
+          $('#img4').fadeOut("slow");
+          $('#img').fadeOut("slow");
+          $('#volverGeneral').fadeOut("slow");
+          $('#volverIdiomas').fadeOut("slow");
+          $('#volverObras').fadeOut("slow");
+         });
+         $('#siguiente3').click(function(){
+          $("#img6").fadeIn("slow");
+          $('#img5').fadeOut("slow");
+         });
+         $('#piezas').click(function(){
+          $("#img7").fadeIn("slow");
+          $('#img6').fadeOut("slow");
+         });
   </script>
   <!------------------FIN MENU---------------------->
    <!------------------FONDO---------------------->
