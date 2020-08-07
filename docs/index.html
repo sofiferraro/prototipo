@@ -174,7 +174,12 @@
                position: absolute;
                 top:76%;
                 left:1%;
-                }                       
+                } 
+      #fin{z-index: 350;
+               position: absolute;
+                top:39%;
+                left:45%;
+                }                                   
        #volverIdiomas{z-index: 20;
                position: absolute;
                 top:84%;
@@ -292,8 +297,15 @@
                   height: 100vh;
                   display: flex;
                    align-items: center; }         
-          #rompecabezasVacio{width: 100%;}                                                  
-     
+          #rompecabezasVacio{width: 100%;}  
+          #rompecabezasCompleto{width: 100%;}                                                 
+          #seleccione{z-index: 150;
+               position: absolute;
+                top:20%;
+                left:35%;
+                filter: brightness(50%);
+                width: 36em;
+                }  
             .img{width: 100%;
                   height: 100vh;
                   background: cover;} 
@@ -308,7 +320,9 @@
       <a id="español" class="idioma" href="#">ESPAÑOL</a>
       <a id="ingles" class="idioma" href="#">INGLÉS</a>
   </div>
+  <!-- <img id="seleccione" src="imagenes/seleccione2.png" alt=""> -->
   <div id="obrasEsp" class="contenedorObras">
+    
       <div class="dosObras">
           <a id="obra1" class="obraBototon" href="#"><div id="rectangulo1" class="obra rectangulo">OBRA I</div></a>
           <a id="obra2" class="obraBototon" href="#"><div id="rectangulo2" class="obra rectangulo">OBRA II</div></a>
@@ -325,37 +339,37 @@
     </div>
   </div>
 <div id="img">
-  <div id="img1">
-    <img class="img" src="imagenes/wiframe.jpg" alt="">
-      <button class="boton1" id="boton1"><img class="boton1" src="inicioboton.png" alt=""> </button>
-   </div> 
-   <div id="img2" class="img2">
-    <button class="siguiente" id="siguiente"><img src="imagenes/siguiente.png" alt=""></button>
-      <img id="hombreUno" class="img2 " src="imagenes/hombre1-1.png" alt="">
-  </div> 
-  <div id="img3">
-  
-      <img id="hombreDos" class="img3 hombre" src="imagenes/hompre2-2.png" alt="">
-      <div class="preguntas">
-        <h4 class="bold">¿A qué corriente artística pertenece el autor?</h5>
-          <button id="cubismo"><h5>A. Cubismo</h5></button>
-          <button id="expresionismo"><h5>B. Expresionismo</h5></button>
-          <button id="impresionismo"><h5>C. Impresionismo</h5></button>
-    
+      <div id="img1">
+        <img class="img" src="imagenes/wiframe.jpg" alt="">
+          <button class="boton1" id="boton1"><img class="boton1" src="inicioboton.png" alt=""> </button>
+      </div> 
+      <div id="img2" class="img2">
+        <button class="siguiente" id="siguiente"><img src="imagenes/siguiente.png" alt=""></button>
+          <img id="hombreUno" class="img2 " src="imagenes/hombre1-1.png" alt="">
+      </div> 
+      <div id="img3">
+      
+          <img id="hombreDos" class="img3 hombre" src="imagenes/hompre2-2.png" alt="">
+          <div class="preguntas">
+            <h4 class="bold">¿A qué corriente artística pertenece el autor?</h5>
+              <button id="cubismo"><h5>A. Cubismo</h5></button>
+              <button id="expresionismo"><h5>B. Expresionismo</h5></button>
+              <button id="impresionismo"><h5>C. Impresionismo</h5></button>
+        
 
-        </div>
-        <img clase="resultado" id="correcto" src="imagenes/correcto.png" alt="">
-        <img clase="resultado" id="error" src="imagenes/error.png" alt="">
-  </div> 
-  <div id="img4">
-    <button class="siguiente" id="siguiente2"><img src="imagenes/siguiente.png" alt=""></button>
-      <img class="img4 mano" src="imagenes/mano.png" alt="">
-  </div> 
+            </div>
+            <img clase="resultado" id="correcto" src="imagenes/correcto.png" alt="">
+            <img clase="resultado" id="error" src="imagenes/error.png" alt="">
+      </div> 
+      <div id="img4">
+        <button class="siguiente" id="siguiente2"><img src="imagenes/siguiente.png" alt=""></button>
+          <img class="img4 mano" src="imagenes/mano.png" alt="">
+      </div> 
 
-  <img id="estrellas2" src="imagenes/estrellas2.png" alt="">
-  <img id="estrellas1" src="imagenes/estrella1.png" alt="">
-  <img id="estrellas" src="imagenes/estrellas.png" alt="">
- <button id="volverGeneral"> <img id="volverGeneralImagen" src="volver.png" alt=""></button>
+      <img id="estrellas2" src="imagenes/estrellas2.png" alt="">
+      <img id="estrellas1" src="imagenes/estrella1.png" alt="">
+      <img id="estrellas" src="imagenes/estrellas.png" alt="">
+    <button id="volverGeneral"> <img id="volverGeneralImagen" src="volver.png" alt=""></button>
 </div>
 
 <div id="img5">
@@ -370,11 +384,11 @@
 --> <button class="piezas" id="piezas"><img src="imagenes/piezas.png" alt=""></button> 
 </div>
 <div id="img7">
-  <img id="rompecabezasVacio" src="imagenes/11.jpg" alt="">
+  <img id="rompecabezasCompleto" src="imagenes/11.jpg" alt="">
   <button id="volverGeneral4"> <img id="volverGeneralImagen4" src="volver.png" alt=""></button>
- 
+  
 </div>
-
+<button id="fin"><img id="finImagen" src="imagenes/fin.png" alt=""></button>
 <button id="volverIdiomas" class="volver" href=""><img src="volver.png" alt=""></button>
 
 <button id="volverObras" class="volver" href=""><img src="volver.png" alt=""></button>
@@ -402,12 +416,23 @@
       $('#img5').hide();
       $('#img6').hide();
       $('#img7').hide();
+      $('#seleccione').hide();
+      $('#fin').hide();
+
        $(document).ready(function(){
          $('#español').click(function(){
             $('.unoIdioma').fadeOut("slow");
             $('.contenedorObras').css('bottom', '35%')
             $('#obrasEsp').fadeIn("90000");
             $('#volverIdiomas').fadeIn("slow");
+            setTimeout(function() {
+               $("#seleccione").fadeIn("slow");
+             },500);
+        
+             setTimeout(function() {
+              $("#seleccione").fadeOut("slow");
+             },2000);
+         
            
             $('#volverIdiomas').click(function(){
               $('.unoIdioma').fadeIn("slow");
@@ -438,14 +463,14 @@
             $('#obra1').css({"margin-left":"35em","margin-right":"-25em"});
             $('#volverIdiomas').fadeOut("slow");
             $('#volverObras').fadeIn("slow");
- 
+            $("#seleccione").fadeOut("slow");
          setTimeout(function() {
                $("#img").fadeIn("slow");
-         },700);
+         },600);
         
          setTimeout(function() {
                $("#obra1").fadeOut("slow");
-         },700);
+         },600);
          });
            
        
@@ -459,11 +484,11 @@
             $('#volverObras').fadeIn("slow");
             setTimeout(function() {
                   $("#img").fadeIn("slow");
-             },700);
+             },600);
         
              setTimeout(function() {
                   $("#obra2").fadeOut("slow");
-            },700);
+            },600);
             });
 
 
@@ -478,11 +503,11 @@
             $('#volverObras').fadeIn("slow");
             setTimeout(function() {
                   $("#img").fadeIn("slow");
-             },700);
+             },600);
         
              setTimeout(function() {
                   $("#obra3").fadeOut("slow");
-            },700);
+            },600);
             });
         
         $('#obra4').click(function(){
@@ -495,11 +520,11 @@
             $('#volverObras').fadeIn("slow");
             setTimeout(function() {
                   $("#img").fadeIn("slow");
-             },700);
+             },500);
         
              setTimeout(function() {
                   $("#obra4").fadeOut("slow");
-            },700);
+            },500);
             });  
                               
          $('#volverObras').click(function(){
@@ -599,6 +624,7 @@
             $('#volverGeneral').fadeOut( "slow");
             $('#volverGeneral2').fadeOut( "slow");
             $('#volverGeneral3').fadeOut( "slow");
+            $('#fin').fadeOut( "slow");
          });
 
 
@@ -608,15 +634,15 @@
         
           setTimeout(function() {
                $("#estrellas").fadeIn(1500);
-         },1500);
+         },1200);
          setTimeout(function() {
                $("#siguiente").fadeIn(1500);
-         },2500);
+         },2500);});
          $('#siguiente').click(function(){
           $("#img2").fadeOut("slow");
           $("#img3").fadeIn("slow");
          }); 
-         });   
+            
 
          $('#cubismo').click(function(){
            $("#error").fadeIn("slow");
@@ -679,6 +705,35 @@
          $('#piezas').click(function(){
           $("#img7").fadeIn("slow");
           $('#img6').fadeOut("slow");
+          setTimeout(function() {
+               $("#fin").fadeIn("slow");
+         },1000);
+         $('#fin').click(function(){
+           $("#img").fadeOut("slow");
+           $("#img5").fadeOut("slow");
+           $("#img7").fadeOut("slow");
+           $('#obra1').fadeIn("slow");
+           $('#obra2').fadeIn("slow");
+            $('#obra3').fadeIn("slow");
+            $('#obra4').fadeIn("slow");
+            $('#rectangulo1').animate({width:"8.5em", height:"12em"});
+            $('#obra1').css({"margin-left":"5em","margin-right":"10em"});
+            $('#rectangulo2').animate({width:"8.5em", height:"12em"});
+            $('#obra2').css({"margin-left":"8em","margin-right":"-2em"});
+            $('#rectangulo3').animate({width:"8.5em", height:"12em"});
+            $('#obra3').css({"margin-left":"-.8em","margin-right":"2em"});
+            $('#rectangulo4').animate({width:"8.5em", height:"12em"});
+            $('#obra4').css({"margin-left":"11em","margin-right":"10em"});
+            $('#estrellas').fadeOut("slow");
+            $('#volverGeneral').fadeOut( "slow");
+            $('#volverGeneral2').fadeOut( "slow");
+            $('#volverGeneral3').fadeOut( "slow");
+            $('#fin').fadeOut( "slow");
+                          $('.unoIdioma').fadeIn("slow");
+              $('#obrasEsp').fadeOut("90000");
+              $('#volverIdiomas').fadeOut("slow");
+         });
+
          });
   </script>
   <!------------------FIN MENU---------------------->
