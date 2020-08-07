@@ -78,7 +78,8 @@ button:focus{outline: none;}
    filter: brightness(55%);
    padding-left: 1em;
    padding-right: .1em;
-    margin-top: 0em;} 
+    margin-top: 0em;
+    margin-bottom: .5em;} 
   
   .contenedorObras{position: absolute;
                  bottom: -50%;
@@ -127,7 +128,7 @@ button:focus{outline: none;}
              padding-left: 3em;
              padding-bottom: 3em;
              cursor: pointer; } 
-      .siguiente{z-index: 350;
+      .siguiente{z-index: 550;
             position: absolute;
              top:10%;
              left:80%;
@@ -176,8 +177,9 @@ button:focus{outline: none;}
    #fin{z-index: 350;
             position: absolute;
              top:39%;
-             left:45%;
-             }                                   
+             left:30%;
+             }  
+    #finImagen{width: 12em;}                                         
     #volverIdiomas{z-index: 20;
             position: absolute;
              top:84%;
@@ -196,13 +198,13 @@ button:focus{outline: none;}
              }
    #siguiente2{z-index: 150;
             position: absolute;
-             top:10%;
-             left:74%;
+             top:30%;
+             left:98%;
              } 
    #siguiente3{z-index: 150;
             position: absolute;
-             top:14%;
-             left:74%;
+            top:30%;
+            left:98%;
              filter: brightness(80%);
              transition: .6s;
              }  
@@ -212,8 +214,8 @@ button:focus{outline: none;}
              }
    #siguiente4{z-index: 150;
             position: absolute;
-             top:14%;
-             left:74%;
+             top:30%;
+             left:98%;
              filter: brightness(80%);
              transition: .6s;
              }  
@@ -223,8 +225,8 @@ button:focus{outline: none;}
              }
   #siguiente5{z-index: 150;
             position: absolute;
-             top:14%;
-             left:74%;
+             top:30%;
+             left:98%;
              filter: brightness(80%);
              transition: .6s;
              }  
@@ -234,11 +236,14 @@ button:focus{outline: none;}
              }
     #piezas{z-index: 150;
             position: absolute;
-             top:19%;
-             left:30%;
+             top:30%;
+             left:0%;
              filter: brightness(80%);
              transition: .6s;
+            
              }  
+   .piezasImagen{width: 25em;}          
+
    #piezas:hover{
              filter: brightness(100%);
              
@@ -267,7 +272,7 @@ button:focus{outline: none;}
                  }      
       #correcto{position: absolute;
                    z-index: 124;
-                   top:15%;
+                   top:0%;
                    left:35%;
                    width: 3em;
                  }                      
@@ -278,8 +283,9 @@ button:focus{outline: none;}
                    width: 3em; } 
        .mano{position: absolute;
                    z-index: 124;
-                   top:0%;
-                   left:35%;
+                   top:50%;
+                   left:10%;
+                   width: 15em;
                   
                  } 
        .hombre{position: absolute;
@@ -299,8 +305,15 @@ button:focus{outline: none;}
                height: 100vh;
                display: flex;
                 align-items: center; }         
-       #rompecabezasVacio{width: 100%;}  
-       #rompecabezasCompleto{width: 100%;}                                                 
+       #rompecabezasVacio{width: 56em;
+                            position: absolute;
+                        left: -78%;}  
+        #rompecabezasVacio2{width: 57em}
+
+       #rompecabezasCompleto{width: 57em;
+                            position: absolute;
+                            left:-60%
+                            }                                                 
        #seleccione{z-index: 150;
             position: absolute;
              top:20%;
