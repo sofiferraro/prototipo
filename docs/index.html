@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>	Prototipo Grupo 1 </title>
-    
+   
+
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="estilo2.css" />
     <link rel="shortcut icon" href="imagenes/firmalivia.png">
+    <link rel="stylesheet" href="estilocelu.css" >
+    
  <style>
+   @media (min-width: 700px) and (orientation: landscape){
    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
    .rectangulo{width: 8.5em;
                 height: 12em;
@@ -310,7 +314,7 @@
                   height: 100vh;
                   background: cover;} 
 
-                 @media only screen and (max-width: 600px) {body{transform: rotate(90deg);}}                  
+                }                  
  </style>
   </head>
   <body>
@@ -340,11 +344,11 @@
   </div>
 <div id="img">
       <div id="img1">
-        <img class="img" src="imagenes/wiframe.jpg" alt="">
+        <img class="imgFondo" src="imagenes/wiframe.jpg" alt="">
           <button class="boton1" id="boton1"><img class="boton1" src="inicioboton.png" alt=""> </button>
       </div> 
       <div id="img2" class="img2">
-        <button class="siguiente" id="siguiente"><img src="imagenes/siguiente.png" alt=""></button>
+        <button class="siguiente" id="siguiente"><img class="siguienteImagen" src="imagenes/siguiente.png" alt=""></button>
           <img id="hombreUno" class="img2 " src="imagenes/hombre1-1.png" alt="">
       </div> 
       <div id="img3">
@@ -369,23 +373,23 @@
       <img id="estrellas2" src="imagenes/estrellas2.png" alt="">
       <img id="estrellas1" src="imagenes/estrella1.png" alt="">
       <img id="estrellas" src="imagenes/estrellas.png" alt="">
-    <button id="volverGeneral"> <img id="volverGeneralImagen" src="volver.png" alt=""></button>
+    <button id="volverGeneral"> <img class="volverGeneralImagen" src="volver.png" alt=""></button>
 </div>
 
 <div id="img5">
   <img id="rompecabezasVacio" src="imagenes/9.jpg" alt="">
-  <button id="volverGeneral2"> <img id="volverGeneralImagen2" src="volver.png" alt=""></button>
-  <button class="siguiente" id="siguiente3"><img src="imagenes/siguiente.png" alt=""></button>
+  <button id="volverGeneral2"> <img class="volverGeneralImagen" src="volver.png" alt=""></button>
+  <button class="siguiente" id="siguiente3"><img class="siguiente" src="imagenes/siguiente.png" alt=""></button>
 </div>
 <div id="img6">
   <img id="rompecabezasVacio" src="imagenes/10.jpg" alt="">
-  <button id="volverGeneral3"> <img id="volverGeneralImagen3" src="volver.png" alt=""></button>
+  <button id="volverGeneral3"> <img class="volverGeneralImagen" src="volver.png" alt=""></button>
   <!--<button class="siguiente" id="siguiente4"><img src="imagenes/siguiente.png" alt=""></button>
---> <button class="piezas" id="piezas"><img src="imagenes/piezas.png" alt=""></button> 
+--> <button class="piezas" id="piezas"><img class="siguiente" src="imagenes/piezas.png" alt=""></button> 
 </div>
 <div id="img7">
   <img id="rompecabezasCompleto" src="imagenes/11.jpg" alt="">
-  <button id="volverGeneral4"> <img id="volverGeneralImagen4" src="volver.png" alt=""></button>
+  <button id="volverGeneral4"> <img class="volverGeneralImagen" src="volver.png" alt=""></button>
   
 </div>
 <button id="fin"><img id="finImagen" src="imagenes/fin.png" alt=""></button>
@@ -735,6 +739,84 @@
          });
 
          });
+
+         $('#obra1').click(function(){
+            $('#obra2').fadeOut("slow");
+            $('#obra3').fadeOut("slow");
+            $('#obra4').fadeOut("slow");
+            $('#rectangulo1').animate({width:"100vw", height:"20em", opacity:"1"});
+            $('#obra1').css({"margin-left":"35em","margin-right":"-25em"});
+            $('#volverIdiomas').fadeOut("slow");
+            
+            $('#volverGeneral').fadeIn( "slow");
+            $("#seleccione").fadeOut("slow");
+         setTimeout(function() {
+               $("#img").fadeIn("slow");
+         },600);
+        
+         setTimeout(function() {
+               $("#obra1").fadeOut("slow");
+         },600);
+         });
+           
+       
+        $('#obra2').click(function(){
+            $('#obra1').fadeOut("slow");
+            $('#obra3').fadeOut("slow");
+            $('#obra4').fadeOut("slow");
+            $('#rectangulo2').animate({width:"100vw", height:"20em", opacity:"1"});
+            $('#obra2').css({"margin-left":"15em","margin-right":"-23em"});
+            $('#volverIdiomas').fadeOut("slow");
+            $('#volverGeneral').fadeIn("slow");
+            $('#img2').fadeOut("slow");
+            setTimeout(function() {
+                  $("#img").fadeIn("slow");
+             },600);
+        
+             setTimeout(function() {
+                  $("#obra2").fadeOut("slow");
+            },600);
+            });
+
+
+ 
+        $('#obra3').click(function(){
+            $('#obra1').fadeOut("slow");
+            $('#obra2').fadeOut("slow");
+            $('#obra4').fadeOut("slow");
+            $('#rectangulo3').animate({width:"100vw", height:"20em", opacity:"1"});
+            $('#obra3').css({"margin-left":"-21em","margin-right":"2em"});
+            $('#volverIdiomas').fadeOut("slow");
+            $('#volverGeneral').fadeIn("slow");
+            setTimeout(function() {
+                  $("#img").fadeIn("slow");
+             },600);
+        
+             setTimeout(function() {
+                  $("#obra3").fadeOut("slow");
+            },600);
+            });
+        
+        $('#obra4').click(function(){
+            $('#obra1').fadeOut("slow");
+            $('#obra2').fadeOut("slow");
+            $('#obra3').fadeOut("slow");
+            $('#rectangulo4').animate({width:"100vw", height:"20em", opacity:"1"});
+            $('#obra4').css({"margin-left":"-23em","margin-right":"10em"});
+            $('#volverIdiomas').fadeOut("slow");
+            $('#volverGeneral').fadeIn("slow");
+            setTimeout(function() {
+                  $("#img").fadeIn("slow");
+             },500);
+        
+             setTimeout(function() {
+                  $("#obra4").fadeOut("slow");
+            },500);
+            });  
+
+
+
+
   </script>
   <!------------------FIN MENU---------------------->
    <!------------------FONDO---------------------->
