@@ -434,56 +434,73 @@
             $('#obra2').fadeOut("slow");
             $('#obra3').fadeOut("slow");
             $('#obra4').fadeOut("slow");
-            $('#rectangulo1').animate({width:"36em", height:"20em", opacity:"1"});
-            $('#obra1').css({"margin-left":"15em","margin-right":"-25em"});
+            $('#rectangulo1').animate({width:"100vw", height:"20em", opacity:"1"});
+            $('#obra1').css({"margin-left":"35em","margin-right":"-25em"});
             $('#volverIdiomas').fadeOut("slow");
             $('#volverObras').fadeIn("slow");
-            $('#obra1').click(function(){
-              $('#img').fadeIn("9000");
-              
-              $('#obra1').fadeOut("slow");
-              });
-            });
+ 
+         setTimeout(function() {
+               $("#img").fadeIn("slow");
+         },700);
+        
+         setTimeout(function() {
+               $("#obra1").fadeOut("slow");
+         },700);
+         });
+           
+       
         $('#obra2').click(function(){
             $('#obra1').fadeOut("slow");
             $('#obra3').fadeOut("slow");
             $('#obra4').fadeOut("slow");
-            $('#rectangulo2').animate({width:"36em", height:"20em", opacity:"1"});
+            $('#rectangulo2').animate({width:"100vw", height:"20em", opacity:"1"});
             $('#obra2').css({"margin-left":"15em","margin-right":"-23em"});
             $('#volverIdiomas').fadeOut("slow");
             $('#volverObras').fadeIn("slow");
-            $('#obra2').click(function(){
-              $('#img').fadeIn("9000");
-              $('#obra2').fadeOut("slow");
-              });
+            setTimeout(function() {
+                  $("#img").fadeIn("slow");
+             },700);
+        
+             setTimeout(function() {
+                  $("#obra2").fadeOut("slow");
+            },700);
             });
+
+
+ 
         $('#obra3').click(function(){
             $('#obra1').fadeOut("slow");
             $('#obra2').fadeOut("slow");
             $('#obra4').fadeOut("slow");
-            $('#rectangulo3').animate({width:"36em", height:"20em", opacity:"1"});
+            $('#rectangulo3').animate({width:"100vw", height:"20em", opacity:"1"});
             $('#obra3').css({"margin-left":"-21em","margin-right":"2em"});
             $('#volverIdiomas').fadeOut("slow");
             $('#volverObras').fadeIn("slow");
-            $('#obra3').click(function(){
-              $('#img').fadeIn("9000");
-              $('#obra3').fadeOut("slow");
-              });
+            setTimeout(function() {
+                  $("#img").fadeIn("slow");
+             },700);
+        
+             setTimeout(function() {
+                  $("#obra3").fadeOut("slow");
+            },700);
             });
         
         $('#obra4').click(function(){
             $('#obra1').fadeOut("slow");
             $('#obra2').fadeOut("slow");
             $('#obra3').fadeOut("slow");
-            $('#rectangulo4').animate({width:"36em", height:"20em", opacity:"1"});
+            $('#rectangulo4').animate({width:"100vw", height:"20em", opacity:"1"});
             $('#obra4').css({"margin-left":"-23em","margin-right":"10em"});
             $('#volverIdiomas').fadeOut("slow");
             $('#volverObras').fadeIn("slow");
-            $('#obra4').click(function(){
-              $('#img').fadeIn("9000");
-              $('#obra4').fadeOut("slow");
-              });
-            });   
+            setTimeout(function() {
+                  $("#img").fadeIn("slow");
+             },700);
+        
+             setTimeout(function() {
+                  $("#obra4").fadeOut("slow");
+            },700);
+            });  
                               
          $('#volverObras').click(function(){
               $('#obra1').fadeIn("slow");
